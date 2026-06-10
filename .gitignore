@@ -2,10 +2,15 @@
 .thumbs.db
 node_modules
 
-# Quasar core related directories
+# Quasar legacy
 .quasar
-/dist
 /quasar.config.*.temporary.compiled*
+
+# Vite / build
+dist
+dist-ssr
+*.local
+*.tsbuildinfo
 
 # Cordova related directories and files
 /src-cordova/node_modules
@@ -16,14 +21,26 @@ node_modules
 # Capacitor related directories and files
 /src-capacitor/www
 /src-capacitor/node_modules
+/src-capacitor/android/app/build
+/src-capacitor/android/.gradle
+/src-capacitor/android/build
+/src-capacitor/android/local.properties
+/src-capacitor/android/app/release
+/src-capacitor/android/app/debug
+/src-capacitor/android/app/capacitor.build.gradle
+/src-capacitor/android/capacitor.settings.gradle
+/src-capacitor/android/app/src/main/assets/public
+/src-capacitor/pnpm-lock.yaml
 
 # Log files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 
 # Editor directories and files
 .idea
+.vscode
 *.suo
 *.ntvs*
 *.njsproj
@@ -31,3 +48,6 @@ yarn-error.log*
 
 # local .env files
 .env.local*
+
+# OMX / OMC runtime state
+.codegraph
