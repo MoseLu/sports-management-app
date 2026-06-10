@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "project": "sports-management",
+  "status": "active",
+  "documents": {
+    "readme": "README.md",
+    "agents": "AGENTS.md",
+    "changelog": "CHANGELOG.md",
+    "todo": "TODO.md",
+    "milestone": "MILESTONES.md",
+    "prd": "PRD.md",
+    "tdd": "TDD.md",
+    "memory": "docs/MEMORY.md",
+    "adr": "docs/ADR",
+    "manifest": "docs/project-docs.manifest.json"
+  },
+  "owners": {
+    "docsAgent": "control-plane AgentTask",
+    "memoryPlane": "base_service"
+  },
+  "stack": {
+    "frontend": "vite + react@18 + typescript@5 + antd@5 + zustand@4 + react-i18next + react-router-dom@6",
+    "mobile": "capacitor@7 android",
+    "build": "vite@5"
+  },
+  "verification": {
+    "docs": "manifest JSON parse + required file existence",
+    "frontend": "pnpm install && pnpm typecheck && pnpm lint && pnpm build exit 0",
+    "i18n": "grep -rE 'i18n\\.use|initReactI18next' src/ returns only src/i18n/index.ts"
+  },
+  "created": "2026-06-07",
+  "writer": "workspace-docs-gap-audit-A1",
+  "source": "audit:docs/audit/workspace-docs-gap-audit-2026-06-07.md",
+  "updated": "2026-06-11"
+}
