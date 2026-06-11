@@ -97,5 +97,5 @@ repository root.
 
 See `INDEX.md` for the canonical document map, and `AGENTS.md` for root
 agent rules, boundaries, and the local doc read order. `PRD.md` and
-`TDD.md` define the product and test scope. `TODO.md`, `MILESTONES.md`,
+`TDD.md` define the product and test scope. `TODO.md`, `MILESTONE.md`,
 and `CHANGELOG.md` track work and history.

@@ -15,7 +15,7 @@ Last updated: 2026-06-11
 | `AGENTS.md` | Root agent rules, boundaries, verification, doc read order | owner |
 | `CHANGELOG.md` | Keep-a-Changelog style release history | owner |
 | `TODO.md` | P0/P1/P2 task list with requirement IDs and test cases | owner |
-| `MILESTONES.md` | Evidence-backed milestone status snapshot | owner |
+| `MILESTONE.md` | Evidence-backed milestone status snapshot | owner |
 | `PRD.md` | Product requirements, users, acceptance criteria, non-goals | owner |
 | `TDD.md` | Test/technical design, architecture assumptions, verification | owner |
 | `INDEX.md` | This file | owner |
@@ -39,7 +39,7 @@ Last updated: 2026-06-11
 1. `README.md` / `README.zh-CN.md` for entrypoint narrative
 2. `PRD.md` for product scope; `TDD.md` for technical design
 3. `AGENTS.md` for agent rules and edit boundaries
-4. `MILESTONES.md` for current status; `CHANGELOG.md` for shipped history
+4. `MILESTONE.md` for current status; `CHANGELOG.md` for shipped history
 5. `TODO.md` for active work
 
 ## Update discipline

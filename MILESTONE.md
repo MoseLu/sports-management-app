@@ -1,4 +1,4 @@
-# Milestones — Axi Sports Management App
+# Milestone — Axi Sports Management App
 
 > Evidence-backed milestone snapshot for the Vite + React 18 + Capacitor
 > sports management application skeleton. Long-form history lives in
@@ -24,7 +24,7 @@ keeping all PRD-AC in scope for the new stack.
 
 **Stop condition**: `pnpm install && pnpm typecheck && pnpm lint && pnpm build` pass; `pnpm build && pnpm cap:sync` produces `src-capacitor/android/app/src/main/assets/public/index.html`; `docs/project-docs.manifest.json` is parseable and reflects the React stack.
 
-## Milestones (M-*)
+## Milestone (M-*)
 
 - **M-0 — Initial skeleton** (2025-04-25): Quasar + Vue 3 + TypeScript + Pinia + Vue I18n + Capacitor Android shell + backend placeholder. Status: closed.
 - **M-DOCS — Doc suite alignment** (2026-06-08): root docs aligned with the deep-init-pro standard. Status: closed (the doc suite persisted through the frontend migration; this milestone is kept for history).
@@ -41,5 +41,5 @@ keeping all PRD-AC in scope for the new stack.
 
 ## Change Log
 
-- 2026-06-08: initial `MILESTONES.md` created alongside the deep-init docs suite pass.
+- 2026-06-08: initial `MILESTONE.md` created alongside the deep-init docs suite pass.
 - 2026-06-11: M-CURRENT updated to reflect the Vite + React 18 frontend migration; M-DOCS closed.

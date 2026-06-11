@@ -109,7 +109,7 @@ cd src-capacitor && pnpm install
 
 # Doc integrity
 for f in README.md README.zh-CN.md AGENTS.md CHANGELOG.md TODO.md \
-         MILESTONES.md INDEX.md PRD.md TDD.md; do
+         MILESTONE.md INDEX.md PRD.md TDD.md; do
   test -f "$f" || exit 1
 done
 node -e "JSON.parse(require('fs').readFileSync('docs/project-docs.manifest.json','utf8'))"

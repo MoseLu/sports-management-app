@@ -94,5 +94,5 @@ Vite 构建产物。
 ## 文档地图
 
 规范的文档目录请见 `INDEX.md`，根 agent 规则与边界请见 `AGENTS.md`。
-`PRD.md` 和 `TDD.md` 定义产品和测试范围。`TODO.md`、`MILESTONES.md`、
+`PRD.md` 和 `TDD.md` 定义产品和测试范围。`TODO.md`、`MILESTONE.md`、
 `CHANGELOG.md` 跟踪任务与历史。

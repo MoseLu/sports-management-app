@@ -3,7 +3,7 @@
 > Root-level agent rules for `projects/axi-sports-management-app`. This
 > file is the first stop for any agent entering the repository. Read in
 > order: this file → `README.md` → `INDEX.md` → `PRD.md` → `TDD.md` →
-> `TODO.md` → `MILESTONES.md` → `CHANGELOG.md` → `docs/project-docs.manifest.json`.
+> `TODO.md` → `MILESTONE.md` → `CHANGELOG.md` → `docs/project-docs.manifest.json`.
 
 Last updated: 2026-06-11
 
@@ -45,7 +45,7 @@ Web SPA; the Capacitor Android shell wraps the same bundle.
 | Product scope | `PRD.md` |
 | Test / technical design | `TDD.md` |
 | Active work | `TODO.md` |
-| Milestone status | `MILESTONES.md` |
+| Milestone status | `MILESTONE.md` |
 | History | `CHANGELOG.md` |
 | Security policy | `SECURITY.md` |
 | Document map | `INDEX.md` |
@@ -54,7 +54,7 @@ Web SPA; the Capacitor Android shell wraps the same bundle.
 | Build / quality gate | `vite.config.ts`, `eslint.config.js`, `package.json#scripts` |
 
 **Priority when in conflict**: this file > `README.md` > `PRD.md` >
-`TDD.md` > `TODO.md` > `MILESTONES.md` > `CHANGELOG.md` > `docs/project-docs.manifest.json`.
+`TDD.md` > `TODO.md` > `MILESTONE.md` > `CHANGELOG.md` > `docs/project-docs.manifest.json`.
 
 ## Cross-Project Boundary
 

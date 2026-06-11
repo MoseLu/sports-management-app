@@ -10,7 +10,7 @@ Last updated: 2026-06-11
 
 ### REQ-SPORTS-P0-001 — Root doc suite exists and is parseable
 - **Source AC**: `PRD-AC-001`
-- **Test case**: `for f in README.md README.zh-CN.md AGENTS.md CHANGELOG.md TODO.md MILESTONES.md INDEX.md PRD.md TDD.md; do test -f "$f" || exit 1; done && node -e "JSON.parse(require('fs').readFileSync('docs/project-docs.manifest.json','utf8'))"`; expected: exits 0.
+- **Test case**: `for f in README.md README.zh-CN.md AGENTS.md CHANGELOG.md TODO.md MILESTONE.md INDEX.md PRD.md TDD.md; do test -f "$f" || exit 1; done && node -e "JSON.parse(require('fs').readFileSync('docs/project-docs.manifest.json','utf8'))"`; expected: exits 0.
 - **Evidence**: doc integrity check output.
 
 ### REQ-SPORTS-P0-002 — Vite build + lint clean
