@@ -1,8 +1,8 @@
 {
-  "name": "sports-app",
+  "name": "axi-sports-app",
   "version": "0.0.1",
-  "description": "A Quasar Project",
-  "productName": "Quasar App",
+  "description": "Axi Sports Management Application",
+  "productName": "Axi Sports",
   "author": "1208136885@qq.com <1208136885@qq.com>",
   "type": "module",
   "private": true,
