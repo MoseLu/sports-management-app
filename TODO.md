@@ -45,3 +45,23 @@ Last updated: 2026-06-08
 
 ### REQ-SPORTS-P2-003 — Backend placeholder growth
 - Status: not started; `backend/` is a skeleton. No active consumer.
+
+## Zero-context handoff governance
+
+### ZC-001 — Migrate the project documentation manifest to v2
+- **Problem**: The v1 manifest did not identify the real Quasar and Capacitor entrypoints, runnable commands, current skeleton limitations, or troubleshooting path.
+- **Solution**: Record canonical identity, read order, actual entrypoints, setup/start/health/verify/smoke commands, environment and contract boundaries, current work, troubleshooting, decisions, ownership, and verification evidence.
+- **Expected result**: A zero-context agent can start and validate the Web SPA, recognize the Android wrapper, and avoid treating the backend placeholder as an implemented service.
+- **Acceptance**: The manifest parses as JSON, reports `version: 2`, contains every required v2 field, and all referenced local files exist.
+- **Evidence**: `docs/project-docs.manifest.json`; JSON parse and referenced-file checks dated 2026-06-11; `pnpm lint`; `pnpm build`.
+- **Dependencies**: `AGENTS.md`, `README.md`, `INDEX.md`, `PRD.md`, `TDD.md`, `MILESTONE.md`, `package.json`, and `quasar.config.ts`.
+- **Status**: Completed on 2026-06-11.
+
+### ZC-002 — Keep onboarding facts fresh
+- **Problem**: The skeleton can gain real features, locales, tests, backend contracts, or native requirements while onboarding metadata remains syntactically valid but operationally wrong.
+- **Solution**: Review the manifest whenever entrypoints, commands, environment contracts, Capacitor requirements, backend status, locale status, or milestone evidence changes.
+- **Expected result**: Handoffs accurately distinguish implemented behavior from planned sports-management scope.
+- **Acceptance**: Each relevant change updates `updated`, `currentWork`, and `verification`; verification may be `verified` only after the current safe smoke passes.
+- **Evidence**: Review `git diff -- docs/project-docs.manifest.json TODO.md CHANGELOG.md` and rerun the manifest verification commands.
+- **Dependencies**: Maintainers changing `src/`, `src-capacitor/`, `backend/`, package scripts, or root project docs.
+- **Status**: Ongoing.

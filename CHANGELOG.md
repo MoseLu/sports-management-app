@@ -8,6 +8,8 @@ where applicable (this repository is currently a `0.0.x` skeleton).
 ## [Unreleased]
 
 ### Added
+- Zero-context onboarding manifest v2 with actual Quasar and Capacitor entrypoints, runtime commands, environment and project contracts, current work, troubleshooting, ownership, and smoke evidence.
+- Structured zero-context handoff migration and freshness governance in `TODO.md`.
 - Root documentation suite aligned with the workspace deep-init-pro standard:
   `AGENTS.md`, `CHANGELOG.md`, `TODO.md`, `MILESTONE.md`, `INDEX.md`,
   `PRD.md`, `TDD.md`, plus `README.zh-CN.md` and the existing `README.md`.

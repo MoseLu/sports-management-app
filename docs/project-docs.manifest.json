@@ -1,27 +1,176 @@
 {
-  "version": 1,
-  "project": "sports-management",
-  "status": "legacy",
+  "version": 2,
+  "project": "axi-sports-management-app",
+  "name": "Axi Sports Management App",
+  "status": "verified",
+  "canonicalPath": "/Volumes/code/workspace/projects/axi-sports-management-app",
+  "kind": "quasar-vue-capacitor-application",
+  "lifecycle": "skeleton-active",
+  "owner": "Axi Sports solo owner",
+  "summary": "Quasar and Vue 3 sports-management application skeleton with Pinia, Vue Router, Vue I18n, and a Capacitor Android wrapper; the backend directory is only a placeholder.",
+  "readOrder": [
+    "AGENTS.md",
+    "README.md",
+    "INDEX.md",
+    "PRD.md",
+    "TDD.md"
+  ],
+  "entrypoints": [
+    {
+      "id": "web-root",
+      "path": "src/App.vue",
+      "purpose": "Root Quasar component that renders the active Vue Router view."
+    },
+    {
+      "id": "router",
+      "path": "src/router/index.ts",
+      "purpose": "Create the SPA router and select hash, history, or memory navigation."
+    },
+    {
+      "id": "quasar-config",
+      "path": "quasar.config.ts",
+      "purpose": "Declare boot modules, build behavior, i18n resources, lint checking, and Capacitor integration."
+    },
+    {
+      "id": "capacitor-android",
+      "path": "src-capacitor/android/app/src/main/assets/capacitor.config.json",
+      "purpose": "Generated Android wrapper configuration for the shared Quasar bundle."
+    }
+  ],
+  "commands": {
+    "setup": [
+      "pnpm install"
+    ],
+    "start": [
+      "pnpm dev"
+    ],
+    "health": [
+      "curl -fsS http://127.0.0.1:9000/"
+    ],
+    "verify": [
+      "pnpm lint && pnpm build"
+    ],
+    "smoke": [
+      "pnpm lint && pnpm build"
+    ]
+  },
+  "environment": {
+    "runtimes": [
+      "Node.js 18, 20, 22, 24, 26, or 28",
+      "pnpm 10.7.1",
+      "Modern browser",
+      "Android toolchain only for native Capacitor builds"
+    ],
+    "services": [
+      "Quasar Vite development server",
+      "No real backend service is currently defined"
+    ],
+    "variables": [
+      {
+        "name": "VUE_ROUTER_MODE",
+        "required": false,
+        "secret": false,
+        "source": "Quasar build environment; defaults to the configured hash mode."
+      },
+      {
+        "name": "VUE_ROUTER_BASE",
+        "required": false,
+        "secret": false,
+        "source": "Optional router base supplied by the Quasar build environment."
+      },
+      {
+        "name": "PORT",
+        "required": false,
+        "secret": false,
+        "source": "Optional SSR production-port override; the current primary surface is SPA mode."
+      }
+    ]
+  },
+  "contracts": {
+    "provides": [
+      "Quasar Web SPA bundle",
+      "Capacitor Android wrapper for the same frontend bundle"
+    ],
+    "consumes": [
+      "Browser platform APIs",
+      "Capacitor Android runtime when building the native wrapper"
+    ],
+    "files": [
+      "quasar.config.ts",
+      "src/router/index.ts",
+      "src/i18n/index.ts",
+      "src/stores/index.ts",
+      "src-capacitor/package.json"
+    ]
+  },
+  "currentWork": {
+    "todo": "TODO.md",
+    "milestone": "MILESTONE.md",
+    "active": [
+      "Maintain a parseable, evidence-backed root documentation suite.",
+      "Keep Quasar lint and build clean.",
+      "Define future i18n, visual regression, and native-shell hardening work."
+    ],
+    "knownFailures": [
+      "The unit-test script is a placeholder and no unit-test framework is wired.",
+      "The backend directory has no real service contract.",
+      "The application currently ships only the en-US locale."
+    ]
+  },
+  "troubleshooting": [
+    {
+      "symptom": "pnpm dev starts but the expected page is not available on port 5173.",
+      "diagnosis": "Quasar uses its own emitted development URL and commonly defaults to port 9000.",
+      "resolution": "Read the URL printed by pnpm dev and use the manifest health command when it is 127.0.0.1:9000."
+    },
+    {
+      "symptom": "The build fails after adding or renaming a locale.",
+      "diagnosis": "src/i18n/index.ts or the Quasar i18n resource include no longer matches the locale files.",
+      "resolution": "Register the locale only in src/i18n/index.ts, keep the i18n boot module enabled, and rerun pnpm build."
+    },
+    {
+      "symptom": "A native Android build cannot start.",
+      "diagnosis": "The Capacitor wrapper requires a local Android SDK and toolchain beyond the web dependencies.",
+      "resolution": "Verify the web bundle first, then install the src-capacitor dependencies and use an Android-enabled environment."
+    }
+  ],
+  "decisions": {
+    "adr": "",
+    "changelog": "CHANGELOG.md",
+    "submitLog": ""
+  },
   "documents": {
     "readme": "README.md",
+    "readmeZh": "README.zh-CN.md",
     "agents": "AGENTS.md",
     "changelog": "CHANGELOG.md",
     "todo": "TODO.md",
     "milestone": "MILESTONE.md",
-    "prd": "docs/PRD.md",
-    "tdd": "docs/TDD.md",
-    "memory": "docs/MEMORY.md",
-    "adr": "docs/ADR",
+    "index": "INDEX.md",
+    "prd": "PRD.md",
+    "tdd": "TDD.md",
+    "security": "SECURITY.md",
     "manifest": "docs/project-docs.manifest.json"
   },
   "owners": {
+    "product": "solo owner",
     "docsAgent": "control-plane AgentTask",
     "memoryPlane": "base_service"
   },
   "verification": {
-    "docs": "manifest JSON parse + required file existence"
+    "status": "verified",
+    "lastVerifiedAt": "2026-06-11",
+    "commands": [
+      "pnpm lint && pnpm build"
+    ],
+    "evidence": [
+      "Manifest v2 required-field and referenced-file check passed with 25 references present.",
+      "pnpm lint completed successfully.",
+      "pnpm build completed successfully with Quasar 2.18.1; the only warning was stale Browserslist data."
+    ]
   },
   "created": "2026-06-07",
-  "writer": "workspace-docs-gap-audit-A1",
-  "source": "audit:docs/audit/workspace-docs-gap-audit-2026-06-07.md"
+  "updated": "2026-06-11",
+  "writer": "Codex",
+  "source": "zero-context-onboarding-plan"
 }
