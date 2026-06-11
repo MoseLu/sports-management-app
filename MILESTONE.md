@@ -1,4 +1,4 @@
-# Milestones — Axi Sports Management App
+# Milestone — Axi Sports Management App
 
 > Evidence-backed milestone snapshot for the Quasar + Vue 3 + Capacitor
 > sports management application skeleton. Long-form history lives in
@@ -26,7 +26,7 @@ without changing the Quasar / Capacitor app behavior.
 **Stop condition**: all 9 required root docs exist; `pnpm lint && pnpm build`
 passes; `docs/project-docs.manifest.json` is parseable.
 
-## Milestones (M-*)
+## Milestone (M-*)
 
 - **M-0 — Initial skeleton** (2025-04-25): Quasar + Vue 3 + TypeScript + Pinia + Vue I18n + Capacitor Android shell + backend placeholder. Status: closed.
 - **M-CURRENT — Doc suite alignment** (2026-06-08): root docs aligned with the deep-init-pro standard. Status: in progress (this batch).
