@@ -150,7 +150,8 @@
     "prd": "PRD.md",
     "tdd": "TDD.md",
     "security": "SECURITY.md",
-    "manifest": "docs/project-docs.manifest.json"
+    "manifest": "docs/project-docs.manifest.json",
+    "verification": "VERIFICATION.md"
   },
   "owners": {
     "product": "solo owner",
