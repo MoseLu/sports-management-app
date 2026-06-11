@@ -16,6 +16,10 @@ node_modules
 # Capacitor related directories and files
 /src-capacitor/www
 /src-capacitor/node_modules
+/src-capacitor/android/local.properties
+
+# Agent worktrees and local runtime state
+.claude/worktrees/
 
 # Log files
 npm-debug.log*
