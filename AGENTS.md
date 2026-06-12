@@ -2,8 +2,8 @@
 
 > Root-level agent rules for `projects/axi-sports-management-app`. This
 > file is the first stop for any agent entering the repository. Read in
-> order: this file → `README.md` → `INDEX.md` → `PRD.md` → `TDD.md` →
-> `TODO.md` → `MILESTONE.md` → `CHANGELOG.md` → `docs/project-docs.manifest.json`.
+> order: this file → `README.md` → `INDEX.md` → `docs/state/PRD.md` → `docs/state/TDD.md` →
+> `docs/state/TODO.md` → `docs/state/MILESTONE.md` → `docs/state/CHANGELOG.md` → `docs/project-docs.manifest.json`.
 
 Last updated: 2026-06-08
 
@@ -40,19 +40,19 @@ Web SPA; the Capacitor Android shell wraps the same bundle.
 | Topic | Source of truth |
 |---|---|
 | Entrypoint narrative | `README.md` / `README.zh-CN.md` |
-| Product scope | `PRD.md` |
-| Test / technical design | `TDD.md` |
-| Active work | `TODO.md` |
-| Milestone status | `MILESTONE.md` |
-| History | `CHANGELOG.md` |
-| Security policy | `SECURITY.md` |
+| Product scope | `docs/state/PRD.md` |
+| Test / technical design | `docs/state/TDD.md` |
+| Active work | `docs/state/TODO.md` |
+| Milestone status | `docs/state/MILESTONE.md` |
+| History | `docs/state/CHANGELOG.md` |
+| Security policy | `docs/governance/SECURITY.md` |
 | Document map | `INDEX.md` |
 | Quasar entry | `src/` (entry `src/App.vue`, `src/router/`, `src/stores/`, `src/i18n/index.ts`) |
 | Capacitor mobile config | `src-capacitor/package.json`, `src-capacitor/android/` |
 | Build / quality gate | `quasar.config.ts`, `eslint.config.js`, `package.json#scripts` |
 
-**Priority when in conflict**: this file > `README.md` > `PRD.md` >
-`TDD.md` > `TODO.md` > `MILESTONE.md` > `CHANGELOG.md` > `docs/project-docs.manifest.json`.
+**Priority when in conflict**: this file > `README.md` > `docs/state/PRD.md` >
+`docs/state/TDD.md` > `docs/state/TODO.md` > `docs/state/MILESTONE.md` > `docs/state/CHANGELOG.md` > `docs/project-docs.manifest.json`.
 
 ## Cross-Project Boundary
 
@@ -81,8 +81,9 @@ pnpm exec vue-tsc --noEmit
 Doc integrity check (required for doc-only commits):
 
 ```bash
-for f in README.md README.zh-CN.md AGENTS.md CHANGELOG.md TODO.md \
-         MILESTONE.md INDEX.md PRD.md TDD.md; do
+for f in README.md README.zh-CN.md AGENTS.md INDEX.md \
+         docs/state/CHANGELOG.md docs/state/TODO.md \
+         docs/state/MILESTONE.md docs/state/PRD.md docs/state/TDD.md; do
   test -f "$f" || exit 1
 done
 ```

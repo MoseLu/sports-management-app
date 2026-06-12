@@ -136,20 +136,20 @@
   ],
   "decisions": {
     "adr": "",
-    "changelog": "CHANGELOG.md",
+    "changelog": "docs/state/CHANGELOG.md",
     "submitLog": ""
   },
   "documents": {
     "readme": "README.md",
     "readmeZh": "README.zh-CN.md",
     "agents": "AGENTS.md",
-    "changelog": "CHANGELOG.md",
-    "todo": "TODO.md",
-    "milestone": "MILESTONE.md",
+    "changelog": "docs/state/CHANGELOG.md",
+    "todo": "docs/state/TODO.md",
+    "milestone": "docs/state/MILESTONE.md",
     "index": "INDEX.md",
-    "prd": "PRD.md",
-    "tdd": "TDD.md",
-    "security": "SECURITY.md",
+    "prd": "docs/state/PRD.md",
+    "tdd": "docs/state/TDD.md",
+    "security": "docs/governance/SECURITY.md",
     "manifest": "docs/project-docs.manifest.json",
     "verification": "VERIFICATION.md"
   },
