@@ -1,0 +1,3 @@
+# Marker so the empty-skeleton tree survives `git clean` / filesystem
+# sync. Delete this file only when the backend gains a real stack
+# manifest (go.mod / package.json / pyproject.toml / Cargo.toml).
