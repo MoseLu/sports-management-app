@@ -6,7 +6,7 @@ optional Capacitor Android shell. This repository is the canonical home of
 the Web client and the Capacitor wrapper; the backend lives in `backend/`
 and is currently a placeholder.
 
-- **Owner**: solo owner (`1208136885@qq.com`)
+- **Owner**: solo owner (see `docs/OWNERS.md` for current contact)
 - **Canonical path**: `/Volumes/code/workspace/projects/axi-sports-management-app`
 - **Workspace position**: `projects/axi-*` (Axi-prefixed project)
 - **Product name**: `Axi Sports` (`package.json#productName`)

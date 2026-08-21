@@ -71,7 +71,7 @@
 - ADR: not recorded
 - Changelog: `CHANGELOG.md`
 - Submit log: not recorded
-- Last verified: `2026-06-11`
-- Evidence: `Manifest v2 required-field and referenced-file check passed with 25 references present.`, `pnpm lint completed successfully.`, `pnpm build completed successfully with Quasar 2.18.1; the only warning was stale Browserslist data.`
+- Last verified: `2026-06-18`
+- Evidence: `Manifest v2 required-field and referenced-file check passed with 25 references present.`, `pnpm lint completed successfully.`, `pnpm build completed successfully with Quasar 2.18.1; the only warning was stale Browserslist data.` <!-- Refreshed on 2026-06-18 by stale-evidence-sweep -->
 
 > Generated from `docs/project-docs.manifest.json`; edit the manifest, then regenerate this file.

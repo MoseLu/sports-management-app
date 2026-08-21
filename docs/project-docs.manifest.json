@@ -160,7 +160,7 @@
   },
   "verification": {
     "status": "verified",
-    "lastVerifiedAt": "2026-06-11",
+    "lastVerifiedAt": "2026-06-18",
     "commands": [
       "pnpm lint && pnpm build"
     ],
@@ -170,8 +170,25 @@
       "pnpm build completed successfully with Quasar 2.18.1; the only warning was stale Browserslist data."
     ]
   },
+  "startup_profile": {
+    "startup": "pnpm install",
+    "build": "pnpm build",
+    "test": null,
+    "lint": "pnpm lint",
+    "typecheck": null,
+    "clean": null
+  },
+  "consumers": [],
+  "shared_packages_exposed": [],
+  "docs_entrypoints": [
+    "AGENTS.md",
+    "README.md",
+    "INDEX.md",
+    "CHANGE.md",
+    "docs/HANDOFF.md"
+  ],
   "created": "2026-06-07",
-  "updated": "2026-06-11",
+  "updated": "2026-06-18",
   "writer": "Codex",
   "source": "zero-context-onboarding-plan"
 }
