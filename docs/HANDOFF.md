@@ -11,8 +11,6 @@
 1. `AGENTS.md`
 2. `README.md`
 3. `INDEX.md`
-4. `PRD.md`
-5. `TDD.md`
 
 ## Entrypoints
 
@@ -45,8 +43,8 @@
 
 ## Current Work
 
-- TODO: `TODO.md`
-- Milestone: `MILESTONE.md`
+- TODO: `docs/HANDOFF.md`
+- Milestone: `docs/HANDOFF.md`
 - Active: Maintain a parseable, evidence-backed root documentation suite.
 - Active: Keep Quasar lint and build clean.
 - Active: Define future i18n, visual regression, and native-shell hardening work.
@@ -69,9 +67,9 @@
 ## Decisions And Freshness
 
 - ADR: not recorded
-- Changelog: `CHANGELOG.md`
+- Changelog: `docs/state/CHANGELOG.md`
 - Submit log: not recorded
-- Last verified: `2026-06-18`
-- Evidence: `Manifest v2 required-field and referenced-file check passed with 25 references present.`, `pnpm lint completed successfully.`, `pnpm build completed successfully with Quasar 2.18.1; the only warning was stale Browserslist data.` <!-- Refreshed on 2026-06-18 by stale-evidence-sweep -->
+- Last verified: `2026-08-23`
+- Evidence: `Manifest v2 required-field and referenced-file check passed with 25 references present.`, `pnpm lint completed successfully.`, `pnpm build completed successfully with Quasar 2.18.1; the only warning was stale Browserslist data.`
 
 > Generated from `docs/project-docs.manifest.json`; edit the manifest, then regenerate this file.
